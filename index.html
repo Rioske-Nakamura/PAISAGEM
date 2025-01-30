@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PWA Paisagem</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link  rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="img/pwa-iicon-256.png">
   <link rel="icon" href="favicon.ico">
@@ -17,25 +17,31 @@
       <h1 class="titulo">Paisagens</h1>
     </header>
     
-    <div class="conteudo">
-      <header class="cabecalhoConteudo">
-        <h2>Paisagem</h2>
-      </header>
-      
+    
+
       
       <main id="camera">
-        <canvas id="camera--sensor"></canvas>
         <video id="camera--view" autoplay playsinline></video>
-    
+        <br/>
         <input type="text" id="photo-title" placeholder="Digite um título para a foto">
         <button id="camera--trigger">Tirar Foto</button>
         <button id="switch-camera">Trocar Câmera</button>
+        <canvas id="camera--sensor"></canvas>
       </main>
 
       <section id="photo-gallery-container">
         <h2>Galeria de Fotos e Localização</h2>
         <div id="photo-gallery"></div>
       </section>
+
+      <div class="conteudo">
+      <header class="cabecalhoConteudo">
+        <h2>Paisagem com Localização</h2>
+      </header>
+      <div id="cards-container"></div>
+      <h3>LOCALIZAÇÃO:</h3>
+      <iframe id="photo-map" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
   
     </div>
 
