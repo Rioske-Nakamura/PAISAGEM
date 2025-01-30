@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PWA Paisagem</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="img/pwa-iicon-256.png">
   <link rel="icon" href="favicon.ico">
-  <meta name="theme-color" content="white" />
+  <meta name="theme-color" content="white">
 </head>
 
 <body>
@@ -19,50 +18,37 @@
     </header>
     
     <div class="conteudo">
-      <main id="camera">
-        
-        <video id="camera--view" autoplay playsinline></video>        
-        <button id="camera--trigger">Tirar Foto</button>
-        <button id="switch-camera">Trocar Câmera</button>
-        <br />
-        <canvas id="camera--sensor"></canvas>
-        
-      </main>
-      <section id="photo-gallery-container">
-        <h2 class="titulo">Galeria de Fotos e Localização</h2>
-        <div id="photo-gallery"></div>
-      </section>
-
-      <section id="photo-cards">
-        <h2 class="titulo">Algumas Fotos com Localização</h2>
-        <div id="cards-container"></div>
-        <h3>LOCALIZAÇÃO:</h3>
-        <iframe id="photo-map" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </section>
-
-      <!-- uoutro trabalho
-      <section id="news">
-        <h2>Últimas Notícias</h2>
-        <div id="news-container"></div>
-        <input type="text" id="apiKeyInput" placeholder="Nova API Key">
-        <button id="btnAtualizarAPI">Atualizar API</button>
-      </section>
-    </div>-->
-      <!--outro trabalho 
-  <div class="conteudoLocalizacao">
+      <header class="cabecalhoConteudo">
+        <h2>Geolocalização</h2>
+      </header>
+      <div class="conteudoLocalizacao">
         <p>Latitude: <span id="latitude">0.0</span></p>
         <p>Longitude: <span id="longitude">0.0</span></p>
-        <div>
-          <button class="botao" id="localizacao">Capturar Localização</button>
-        </div>
+        <button class="botao" id="localizacao">Capturar Localização</button>
         <iframe id="map" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>-->
+      </div>
+      
+      <main id="camera">
+        <canvas id="camera--sensor"></canvas>
+        <video id="camera--view" autoplay playsinline></video>
+    
+        <input type="text" id="photo-title" placeholder="Digite um título para a foto">
+        <button id="camera--trigger">Tirar Foto</button>
+        <button id="switch-camera">Trocar Câmera</button>
+      </main>
+
+      <section id="photo-gallery-container">
+        <h2>Galeria de Fotos e Localização</h2>
+        <div id="photo-gallery"></div>
+      </section>
+  
+    </div>
+
     <footer class="rodape">
       Paisagem
     </footer>
   </section>
-
-  
 </body>
+
 <script type="module" src="/js/main.js"></script>
 </html>
