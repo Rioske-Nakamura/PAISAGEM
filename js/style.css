@@ -1,15 +1,15 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 1;
   box-sizing: border-box;
 }
 
 /* Body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f5f5eb;
+  color: #5b484a;
 }
 
 /* Container principal */
@@ -18,7 +18,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: white;
+  background-color: #e1daca;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -31,7 +31,7 @@ body {
 
 .titulo {
   font-size: 2rem;
-  color: #4A90E2;
+  color: #b3907a;
 }
 
 /* Seções */
@@ -41,18 +41,18 @@ body {
 
 .cabecalhoConteudo h2 {
   font-size: 1.5rem;
-  color: #4A90E2;
+  color: #b3907a;
   margin-bottom: 10px;
 }
 
-/* Geolocalização */
+/* Geolocalização 
 .conteudoLocalizacao p {
   font-size: 1rem;
   margin: 10px 0;
 }
 
 .botao {
-  background-color: #4A90E2;
+  background-color: #c1b6a3;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -62,13 +62,16 @@ body {
 }
 
 .botao:hover {
-  background-color: #357ABD;
+  background-color: #b3907a;
 }
-
+*/
 /* Câmera */
 #camera {
   text-align: center;
   margin-top: 20px;
+  align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #camera--view {
@@ -86,7 +89,7 @@ body {
 #camera--trigger {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #4A90E2;
+  background-color: #c1b6a3;
   color: white;
   border: none;
   border-radius: 5px;
@@ -95,14 +98,14 @@ body {
 }
 
 #camera--trigger:hover {
-  background-color: #357ABD;
+  background-color: #b3907a;
 }
 
 /* Trocar câmera */
 #switch-camera {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #4A90E2;
+  background-color: #c1b6a3;
   color: white;
   border: none;
   border-radius: 5px;
@@ -110,10 +113,10 @@ body {
 }
 
 #switch-camera:hover {
-  background-color: #357ABD;
+  background-color: #b3907a;
 }
 
-/* Notícias */
+/* Notícias 
 #news {
   margin-top: 30px;
 }
@@ -144,7 +147,7 @@ body {
 
 #btnAtualizarAPI:hover {
   background-color: #357ABD;
-}
+}*/
 
 /* Map */
 #map {
