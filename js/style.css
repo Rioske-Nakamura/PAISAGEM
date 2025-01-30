@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #4A90E2;
+}
+
+/* Seções */
+.conteudo {
+  padding: 20px;
+}
+
+.cabecalhoConteudo h2 {
+  font-size: 1.5rem;
+  color: #4A90E2;
+  margin-bottom: 10px;
+}
+
+/* Geolocalização */
+.conteudoLocalizacao p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.botao {
+  background-color: #4A90E2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.botao:hover {
+  background-color: #357ABD;
+}
+
+/* Câmera */
+#camera {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#camera--view {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#camera--output {
+  margin-top: 10px;
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+#camera--trigger {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#camera--trigger:hover {
+  background-color: #357ABD;
+}
+
+/* Trocar câmera */
+#switch-camera {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#switch-camera:hover {
+  background-color: #357ABD;
+}
+
+/* Notícias */
+#news {
+  margin-top: 30px;
+}
+
+#news-container p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+#apiKeyInput {
+  padding: 10px;
+  font-size: 1rem;
+  width: 70%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#btnAtualizarAPI {
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#btnAtualizarAPI:hover {
+  background-color: #357ABD;
+}
+
+/* Map */
+#map {
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #777;
+}
