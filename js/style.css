@@ -125,6 +125,22 @@ body {
   background-color: #b3907a;
 }
 
+#photo-title{
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao focar */
+#photo-title:focus{
+  border-color: #777;
+  box-shadow: 0 0 5px #777
+}
+
 /* Notícias 
 #news {
   margin-top: 30px;
