@@ -123,7 +123,6 @@ cameraTrigger.onclick = async function () {
 switchCameraButton.onclick = function () {
   cameraMode = cameraMode === "user" ? "environment" : "user";
   cameraStart();
-  
 };
 
 window.addEventListener("load", () => {
