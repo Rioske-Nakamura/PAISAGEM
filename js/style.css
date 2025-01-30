@@ -79,11 +79,18 @@ body {
   border-radius: 8px;
 }
 
+#camera--sensor{
+  max-width: -webkit-fill-available;
+}
+
 #camera--output {
   margin-top: 10px;
   max-width: 100%;
   display: block;
   border-radius: 8px;
+}
+.photo-preview{
+  max-width: -webkit-fill-available;
 }
 
 #camera--trigger {
