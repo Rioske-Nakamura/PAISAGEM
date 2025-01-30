@@ -127,9 +127,11 @@ body {
 
 #photo-title{
   width: 40%;
+  background-color: #c1b6a3;
+  color: #f5f5eb;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #ccc;
+  border: 1px solid #5b484a;
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -137,8 +139,11 @@ body {
 
 /* Efeito ao focar */
 #photo-title:focus{
-  border-color: #777;
-  box-shadow: 0 0 5px #777
+  border-color: #5b484a;
+  box-shadow: 0 0 5px #5b484a
+}
+#photo-title::placeholder{
+  color: #f5f5eb;
 }
 
 /* Notícias 
