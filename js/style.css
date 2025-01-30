@@ -81,6 +81,7 @@ body {
 
 #camera--sensor{
   max-width: -webkit-fill-available;
+  max-height: -webkit-fill-available;
 }
 
 #camera--output {
@@ -91,6 +92,7 @@ body {
 }
 .photo-preview{
   max-width: -webkit-fill-available;
+  max-height: -webkit-fill-available;
 }
 
 #camera--trigger {
