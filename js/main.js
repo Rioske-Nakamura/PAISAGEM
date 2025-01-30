@@ -88,6 +88,11 @@ function cameraStart() {
 
 cameraTrigger.onclick = async function () {
   const photoTitle = photoTitleInput.value.trim();
+  if (!photoTitle) {
+    alert("Por favor, insira um título antes de tirar a foto.");
+    return;
+  }
+
   cameraSensor.width = cameraView.videoWidth;
   cameraSensor.height = cameraView.videoHeight;
   cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
