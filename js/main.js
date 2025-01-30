@@ -6,8 +6,9 @@ const cameraView = document.querySelector("#camera--view"),
   cameraTrigger = document.querySelector("#camera--trigger"),
   switchCameraButton = document.createElement("button");
 
-
-
+switchCameraButton.innerText = "Trocar Câmera";
+switchCameraButton.id = "switch-camera";
+document.body.appendChild(switchCameraButton);
 
 let cameraMode = "user";
 const lastPhotos = [];
