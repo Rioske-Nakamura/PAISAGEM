@@ -50,17 +50,22 @@ async function loadPhotos() {
 }
 
 function updatePhotoGallery() {
-  const gallery = document.getElementById("photo-gallery") || document.createElement("div");
-  gallery.id = "photo-gallery";
-  gallery.innerHTML = "";
+  let gallery = document.getElementById("photo-gallery");
+  
+  // Verifica se o contêiner existe antes de adicionar conteúdo
+  if (!gallery) return;
+
+  gallery.innerHTML = ""; // Limpa a galeria antes de atualizar
 
   lastPhotos.forEach((photoWithLocation) => {
     const img = document.createElement("img");
     img.src = photoWithLocation.photo;
     img.classList.add("photo-preview");
 
-    const locationInfo = document.createElement("p");
-    locationInfo.innerText = `Localização: Latitude ${photoWithLocation.location.latitude}, Longitude ${photoWithLocation.location.longitude}`;
+    const locationInfo = document.createElement("h3");
+    const locationInfo2 = document.createElement("h3");
+    locationInfo.innerText = `Latitude: ${photoWithLocation.location.latitude}, Longitude ${photoWithLocation.location.longitude},`;
+    locationInfo2.innerText = `LOCALIZAÇÃO:`;
     
     // Criando o iframe para o mapa
     const iframe = document.createElement("iframe");
@@ -71,14 +76,14 @@ function updatePhotoGallery() {
     iframe.allowfullscreen = true;
     iframe.src = `https://www.google.com/maps?q=${photoWithLocation.location.latitude},${photoWithLocation.location.longitude}&z=15&output=embed`;
 
-    // Adicionando à galeria
+    // Adicionando elementos ao contêiner correto
     gallery.appendChild(img);
     gallery.appendChild(locationInfo);
+    gallery.appendChild(locationInfo2);
     gallery.appendChild(iframe);
   });
-  
-  document.body.appendChild(gallery);
 }
+
 
 function cameraStart() {
   navigator.mediaDevices
